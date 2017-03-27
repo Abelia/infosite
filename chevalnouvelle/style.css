@@ -1,0 +1,447 @@
+/*
+Theme Name: Cheval Nouvelle
+Description: A wordpress theme for cheval nouvelle
+Version: 1.0
+Author: VB
+*/
+
+
+/*------------------RESET------------------*/
+
+
+/*RESET*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+    color: #363333;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'berliner';
+    src: url('fonts/berliner_fraktur-webfont.ttf') format('truetype');
+    src: url('fonts/berliner_fraktur-webfont.eot');
+    src: url('fonts/berliner_fraktur-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/berliner_fraktur-webfont.woff2') format('woff2'), url('fonts/berliner_fraktur-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*--------------------Général + Header-----------------*/
+
+body {
+    background-color: #363333;
+}
+
+header {
+    width: 100%;
+}
+
+header h1 img {
+    position: relative;
+    margin: 0 25%;
+    width: 50%;
+}
+
+header .separation {
+    z-index: 3;
+    height: 20px;
+    width: 90%;
+    margin: -1% auto 0 auto;
+    background-color: #963444;
+    border-radius: 15px;
+}
+
+main {
+    float: left;
+    width: 80%;
+    margin: auto 10%;
+}
+
+
+/*------------------aside*/
+
+main aside {
+    width: 25%;
+    float: right;
+    background-color: #D8D8D8;
+    padding: 5%;
+}
+
+main aside #searchform{
+    left: 50%;
+}
+
+main aside #searchform [type=text] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    width: 100%;
+    height: 25px;
+    padding: 3%;
+    border: none;
+    font-size: 1.3em;
+    margin: 0 0;
+}
+
+main aside #searchform label{
+    display: none;
+    margin: 0 0;
+}
+
+main aside #searchform [type=submit] {
+    background-color:#963444;
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    width: 100%;
+    height: 15px;
+    padding: 3%;
+    border: none;
+    color: #D8D8D8;
+    font-size: 1.4erm;
+}
+
+main aside h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20%;
+}
+
+main aside ul {
+    width: 100%;
+    margin: 0 7%;
+    margin-bottom: 16%;
+}
+
+main aside ul li a {
+    text-decoration: none;
+    color: #363333;
+    line-height: 2;
+}
+
+main aside ul li a:hover {
+    color: #963444;
+}
+
+main aside p {
+    font-weight: 700;
+    margin: 0 7%;
+}
+
+main aside a {
+    text-decoration: none;
+    color: #963444;
+    font-weight: 300;
+    margin: 0 7%;
+}
+
+
+/*-------------------article*/
+
+main article {
+    width: 60%;
+    margin: 0 0 4% 0;
+    background-color: #D8D8D8;
+}
+
+main article .content-article {
+    width: 80%;
+    margin: 0 auto 6.8% auto;
+}
+
+main article .content-article h2{
+    font-family: 'berliner', 'Raleway', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    color: #363333;
+    margin-bottom: 6%;
+    padding-top: 12%;
+
+}
+
+main article .content-article h2 a {
+    font-family: 'berliner', 'Raleway', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    color: #363333;
+    margin-bottom: 6%;
+    padding-top: 12%;
+    text-decoration: none;
+    color: #363333;
+}
+
+main article .content-article .info-article {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 1.3%;
+}
+
+main article .content-article .info-article a {
+    text-decoration: none;
+    color: #363333;
+}
+
+main article .content-article .info-article a:hover {
+    color: #963444;
+}
+
+main article .content-article img {
+    width: 100%;
+    margin: 0 0 6% 0;
+    text-align: center;
+}
+
+main article .content-article div {
+    font-size: 1.07em;
+    margin-bottom: 4%;
+    line-height: 1.8;
+}
+
+main article .content-article .suite {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+main article .content-article .suite a {
+    text-decoration: none;
+    color: #963444;
+}
+
+main article .content-article .suite a:hover {
+    color: #363333;
+}
+
+main .article-info {
+    width: 100%;
+    height: 60px;
+    background-color: #963444;
+}
+
+main .article-info p {
+    margin: 0 10%;
+    padding-top: 2.8%;
+    vertical-align: middle;
+    color: #d8d8d8;
+}
+
+main .article-info p a {
+    text-decoration: none;
+    color: #d8d8d8;
+}
+
+main .article-info p a:hover {
+    color: #363333;
+}
+
+
+/*----------------nav index*/
+
+main nav {
+    width: 60%;
+    text-align: center;
+}
+
+main nav p {
+    margin-top: 2%;
+}
+
+main nav p a {
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+main nav p a:hover{
+    color: #963444;
+}
+
+/*----------------nav single*/
+
+main .single-nav {
+    width: 60%;
+    color: #d8d8d8;
+}
+
+main .single-nav p {
+    float: left;
+    margin-top: 2%;
+}
+
+main .single-nav p:nth-child(2) {
+    float: right;
+}
+
+main .single-nav p a {
+    color: #d8d8d8;
+    text-decoration: none;
+}
+
+
+/*----------------------------footer*/
+
+.footer-page {
+    float: left;
+    width: 100%;
+    height: 40px;
+    background-color: #963444;
+    margin-top: 8%;
+}
+
+.footer-page p {
+    margin: 0.5% 0;
+    text-align: center;
+    color: #d8d8d8;
+}
+
+.footer-page p a {
+    text-decoration: none;
+    color: #d8d8d8;
+}
+
+.footer-page p a:hover {
+    color: #363333;
+}
+
+
+/*-----------------commentaire*/
+
+.comments-template {
+    float: left;
+    width: 48%;
+    margin: 0 10%;
+    color: #fff;
+}
+
+.comments-templates h3 {
+    color: #d8d8d8;
+    width: 60%;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
